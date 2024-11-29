@@ -25,7 +25,8 @@ jobs:
 
     - name: Entrenar modelos BTC y SPY
       run: python proyecto_final_ia.py  
-
+      working-directory: ${{ github.workspace }}
+      
     - name: Publicar modelos como artefactos
       uses: actions/upload-artifact@v3
       with:
