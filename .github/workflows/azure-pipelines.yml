@@ -22,7 +22,7 @@ jobs:
         pip install yfinance pandas xgboost joblib scikit-learn 
 
     - name: Entrenar modelos BTC y SPY
-      run: python ./proyecto_final_ia.py  
+      run: python proyecto_final_ia.py  
 
     - name: Publicar modelos como artefactos
       uses: actions/upload-artifact@v3
