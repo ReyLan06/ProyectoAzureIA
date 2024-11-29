@@ -20,8 +20,14 @@ jobs:
       run: |
         python -m pip install --upgrade pip 
         pip install yfinance pandas xgboost joblib scikit-learn 
-    - name: Listar archivos en el directorio
-      run: ls -al
+    - name: Verificar el directorio actual
+      run: |
+        pwd   # Imprime el directorio actual
+        ls -al  # Lista los archivos en ese directorio
+
+    
+    - name: Checkout del código
+      uses: actions/checkout@v3
 
     - name: Entrenar modelos BTC y SPY
       run: python scr/proyecto_final_ia.py  
