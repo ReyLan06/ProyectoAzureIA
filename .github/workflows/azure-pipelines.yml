@@ -24,7 +24,7 @@ jobs:
       run: ls -al
 
     - name: Entrenar modelos BTC y SPY
-      run: python proyecto_final_ia.py  
+      run: python scr/proyecto_final_ia.py  
       working-directory: ${{ github.workspace }}
       
     - name: Publicar modelos como artefactos
