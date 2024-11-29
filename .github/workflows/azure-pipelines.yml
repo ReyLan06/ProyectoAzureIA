@@ -19,7 +19,7 @@ jobs:
     - name: Instalar dependencias
       run: |
         python -m pip install --upgrade pip 
-        pip install -r requirements.txt 
+        pip install yfinance pandas xgboost joblib scikit-learn 
 
     - name: Entrenar modelos BTC y SPY
       run: python proyecto_final_ia.py  
